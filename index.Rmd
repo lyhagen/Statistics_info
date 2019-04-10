@@ -1,0 +1,24 @@
+--- 
+title: "Deskription, prediktion och kausalitet"
+author: "Ronnie Pingel"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: gitbook
+bibliography: [references.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: ronniepingel/dpk
+description: "Material till kursen Tillämpad statistik, A5"
+---
+
+# Förord
+Detta är material till dataanalyser till kursen i Tillämpad statistik. 
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+

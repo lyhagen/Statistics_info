@@ -1,0 +1,47 @@
+<style>
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
+  .col3 {
+    columns: 3 100px;
+    -webkit-columns: 3 100px;
+    -moz-columns: 3 100px;
+  }
+</style>
+
+
+# Samband mellan två variabler
+Att enbart uttala sig om *en* variabel är sällan enda syfte, utan vanligt är att beskriva hur två variabler $X$ och $Y$ har ett samband i en population, sk *bivariat* samband. Ibland talar man om beroende variabler, man bör dock vara medveten om att termen statistisk beroende inte är likställa med korrelation. Vi ska i detta avsnitt studera olika mått på korrelationer.
+
+
+## Exempel 1
+@romiguier2014comparative undersökte 
+
+
+
+
+## Pearsons korrelation
+
+
+Statistiska samband kan beskrivas med olika \textbf{korrelationsmått}.  \\ \bigskip Datanivån $(x, y)$ samt hur sambandet mellan $x$ och $y$ ser ut bestämmer val av korrelationsmått. T ex om
+	\begin{itemize}
+		\item $x$ och $y$ bägge är kvantitativa variabler (intervall- eller kvotskala) ges stor flexibilitet vad gäller val av korrelationsmått för association. Ofta används \textbf{Pearsons korrelation}, $\rho$.
+		\item Om $x$ och $y$ är minst på ordinalskala används ofta \textbf{Spearmans rangkorrelation}. 
+	\end{itemize}	
+
+### Definition
+Pearsons produktmomentkorrelationskoefficient, hädanefter kallat Pearsons korrelationskoefficient, definieras
+$$\rho_{X,Y}=\text{corr}(X,Y)= \frac{\text{Cov}(X,Y)}{\sigma_X\sigma_Y}$$
+
+För två \textbf{kvantitativa} variabler $X$ och $Y$ definieras \textbf{Pearsons produktmomentkorrelationskoefficient} i \textbf{populationen} som 
+\begin{align}
+	\rho_{xy} & =  \dfrac{\sigma_{xy}}{\sigma_x \sigma_y}
+	\end{align}
+	där $\sigma_{xy}$ är kovariansen\footnotetext[1]{Kovarians är ett mått på linjär samvariation.} i populationen mellan $x$ och $y$ och där $\sigma_x$ och $\sigma_y$ är populationsstandardavvikelser för $x$ resp $y$.
+
+## Räkneövningar
+### Övning 1
+
+## Datorövningar
