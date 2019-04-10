@@ -1,6 +1,6 @@
 --- 
-title: "Deskription, prediktion och kausalitet"
-author: "Ronnie Pingel"
+title: "Statistics info"
+author: "Johan Lyhagen"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -8,12 +8,12 @@ documentclass: gitbook
 bibliography: [references.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: ronniepingel/dpk
-description: "Material till kursen Tillämpad statistik, A5"
+github-repo: lyhagen/Statistics_info
+description: "Some useful information for statisticians"
 ---
 
-# Förord
-Detta är material till dataanalyser till kursen i Tillämpad statistik. 
+# Preface {-}
+The purpose of this book is to gather useful information for statisticians. 
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages

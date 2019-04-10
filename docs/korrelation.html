@@ -5,24 +5,24 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chapter 3 Korrelation | Deskription, prediktion och kausalitet</title>
-  <meta name="description" content="Material till kursen Tillämpad statistik, A5">
+  <title>Chapter 3 Korrelation | Statistics info</title>
+  <meta name="description" content="Some useful information for statisticians">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Chapter 3 Korrelation | Deskription, prediktion och kausalitet" />
+  <meta property="og:title" content="Chapter 3 Korrelation | Statistics info" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="Material till kursen Tillämpad statistik, A5" />
-  <meta name="github-repo" content="ronniepingel/dpk" />
+  <meta property="og:description" content="Some useful information for statisticians" />
+  <meta name="github-repo" content="lyhagen/Statistics_info" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Korrelation | Deskription, prediktion och kausalitet" />
+  <meta name="twitter:title" content="Chapter 3 Korrelation | Statistics info" />
   
-  <meta name="twitter:description" content="Material till kursen Tillämpad statistik, A5" />
+  <meta name="twitter:description" content="Some useful information for statisticians" />
   
 
-<meta name="author" content="Ronnie Pingel">
+<meta name="author" content="Johan Lyhagen">
 
 
 <meta name="date" content="2019-04-10">
@@ -32,7 +32,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="samband-mellan-tva-variabler.html">
+<link rel="prev" href="data-sources.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,6 +50,43 @@
 
 
 
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
 
 </head>
 
@@ -63,16 +100,18 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Förord</a></li>
-<li class="chapter" data-level="2" data-path="samband-mellan-tva-variabler.html"><a href="samband-mellan-tva-variabler.html"><i class="fa fa-check"></i><b>2</b> Samband mellan två variabler</a><ul>
-<li class="chapter" data-level="2.1" data-path="samband-mellan-tva-variabler.html"><a href="samband-mellan-tva-variabler.html#exempel-1"><i class="fa fa-check"></i><b>2.1</b> Exempel 1</a></li>
-<li class="chapter" data-level="2.2" data-path="samband-mellan-tva-variabler.html"><a href="samband-mellan-tva-variabler.html#pearsons-korrelation"><i class="fa fa-check"></i><b>2.2</b> Pearsons korrelation</a><ul>
-<li class="chapter" data-level="2.2.1" data-path="samband-mellan-tva-variabler.html"><a href="samband-mellan-tva-variabler.html#definition"><i class="fa fa-check"></i><b>2.2.1</b> Definition</a></li>
-</ul></li>
-<li class="chapter" data-level="2.3" data-path="samband-mellan-tva-variabler.html"><a href="samband-mellan-tva-variabler.html#rakneovningar"><i class="fa fa-check"></i><b>2.3</b> Räkneövningar</a><ul>
-<li class="chapter" data-level="2.3.1" data-path="samband-mellan-tva-variabler.html"><a href="samband-mellan-tva-variabler.html#ovning-1"><i class="fa fa-check"></i><b>2.3.1</b> Övning 1</a></li>
-</ul></li>
-<li class="chapter" data-level="2.4" data-path="samband-mellan-tva-variabler.html"><a href="samband-mellan-tva-variabler.html#datorovningar"><i class="fa fa-check"></i><b>2.4</b> Datorövningar</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#time-series-data-library"><i class="fa fa-check"></i><b>2.1</b> Time Series Data Library</a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#datamarket"><i class="fa fa-check"></i><b>2.2</b> DataMarket</a></li>
+<li class="chapter" data-level="2.3" data-path="data-sources.html"><a href="data-sources.html#quandl"><i class="fa fa-check"></i><b>2.3</b> Quandl</a></li>
+<li class="chapter" data-level="2.4" data-path="data-sources.html"><a href="data-sources.html#dataseries"><i class="fa fa-check"></i><b>2.4</b> Dataseries</a></li>
+<li class="chapter" data-level="2.5" data-path="data-sources.html"><a href="data-sources.html#pdfetch"><i class="fa fa-check"></i><b>2.5</b> pdfetch</a></li>
+<li class="chapter" data-level="2.6" data-path="data-sources.html"><a href="data-sources.html#ipums"><i class="fa fa-check"></i><b>2.6</b> IPUMS</a></li>
+<li class="chapter" data-level="2.7" data-path="data-sources.html"><a href="data-sources.html#ess"><i class="fa fa-check"></i><b>2.7</b> ESS</a></li>
+<li class="chapter" data-level="2.8" data-path="data-sources.html"><a href="data-sources.html#penn-world-table"><i class="fa fa-check"></i><b>2.8</b> Penn World Table</a></li>
+<li class="chapter" data-level="2.9" data-path="data-sources.html"><a href="data-sources.html#kaggle"><i class="fa fa-check"></i><b>2.9</b> kaggle</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="korrelation.html"><a href="korrelation.html"><i class="fa fa-check"></i><b>3</b> Korrelation</a><ul>
 <li class="chapter" data-level="3.1" data-path="korrelation.html"><a href="korrelation.html#dataanalys-1---histogram"><i class="fa fa-check"></i><b>3.1</b> Dataanalys 1 - Histogram</a></li>
@@ -86,7 +125,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Deskription, prediktion och kausalitet</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistics info</a>
           </h1>
         </div>
 
@@ -105,11 +144,6 @@
 <li><p>Gå till mappen Dataanalys1. Öppna <em>hyra.sps</em> och läs in datafilen läs in <em>hyra.xlsx</em>.</p></li>
 </ol>
 
-<div id="refs" class="references">
-<div>
-<p>Romiguier, J, Philippe Gayral, Marion Ballenghien, Arnaud Bernard, Vincent Cahais, A Chenuil, Ylenia Chiari, et al. 2014. “Comparative Population Genomics in Animals Uncovers the Determinants of Genetic Diversity.” <em>Nature</em> 515 (7526). Nature Publishing Group: 261.</p>
-</div>
-</div>
 </div>
 </div>
             </section>
@@ -117,7 +151,7 @@
           </div>
         </div>
       </div>
-<a href="samband-mellan-tva-variabler.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="data-sources.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
@@ -163,19 +197,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
