@@ -1,0 +1,78 @@
+# Data sources
+
+
+## Time Series Data Library
+Rob J. Hyndman maintained the Time Series Data Library for a long time. Now you can get the data from the R package tsdl. It used to be available fron [DataMarket](https://datamarket.com/data/list/?q=provider:tsdl) but the site has been acquired by Qlik.  The collection consists of about 560 time series of all various variables. Unfortunately, the tsdl package is not on CRAN but can be installed using the following R commands:
+
+```{r eval=FALSE} 
+install.packages("devtools")
+library(devtools)
+install_github("FinYang/tsdl")
+```
+
+## DataMarket
+DataMarket was a very good source for data. Unfortunately it has been acquired by Qlik and the informaiton about how to access the data nowadays is lacking. They do have an [acadmic program](https://www.qlik.com/us/academicprogram) but it is not clear what comes with it.
+
+## Quandl
+
+The Quandl ata source has many economic and financial datasets. For some data you need to have a premoium account but for many you do not need to. You can find the series here: [Quandl](https://www.quandl.com/search) where you can browse for the data you want. Once you found what you looking for, press Expand and then there is a R button on the right hand side and clicking on it yields the R code to download it.
+
+To install the Quandl package:
+
+```{r eval=FALSE} 
+install.packages("Quandl")
+library(Quandl)
+```
+
+For example, to download the Big Mac index for Sweden
+
+```{r eval=FALSE} 
+Quandl("ECONOMIST/BIGMAC_SWE")
+```
+
+More information can be found at [Quandl R Guide](https://docs.quandl.com/docs/r).
+
+## Dataseries
+[dataseries.org](http://www.dataseries.org/) is a comprehensive data archive for Switzerland.
+
+
+```{r eval=FALSE} 
+install.packages("dataseries")
+library(dataseries)
+```
+
+For ecah series you get the R code. For example CPI
+
+```{r eval=FALSE} 
+dataseries::ds("CPI.LD2010100")
+```
+
+## pdfetch
+
+Abiel Reinhart has made an R package to make it easier to download public economic and financial data.  The sources are: St Louis Fed's FRED system, Yahoo Finance, the US Bureau of Labor Statistics, the US Energy Information Administration, the World Bank, Eurostat,the European Central Bank, the Bank of England, the UK's Ofﬁce of National Statistics, Deutsche Bundesbank, and INSEE.
+
+It is availalbe at CRAN and can be installed using:
+
+```{r eval=FALSE} 
+install.packages("pdfetch")
+library(pdfetch)
+```
+
+Depending on the source differnt functions needs to be used and the identifiers need to be found att the various sources.
+
+## IPUMS
+
+IPUMs provides data from censuses and surveys from around the world. There are huge amounst of data, e.g. IPUMS International has data for almost 100 countries. To use IPUMS you need to register but the data is free of charge. It can be found here: [IPUMS](https://www.ipums.org/). There is, to my knowledge, no nice R interface.
+
+## ESS
+
+European Social Surveys is a biennial cross-country survey of attitudes and behaviour. The first round was in 2001 and it is now at round 8. Hence, it is possible to both analyze changes over time as well as differences between countries. The access is free of charge but a registration is nessisary. 
+
+## Penn World Table
+
+The Penn World Table consists of data on relative income and other econmic indicators (almost 30) for more than 180 countries between 1950 and 2014. It is developed by Robert Summers and Alan Heston (amongst others) for the purpose of comparing national accounts. It is administrated by Groningen Growth and Development Centre, Faculty of Economics and Business, University of Groningen. There is a R package pwt9 (available at CRAN) which facilitates access to the data.
+
+
+## kaggle
+kaggle is one of the largest collections of datasets with more than 15,000 datasets.It consists of all varoius types of data and you do not need to register to access them. 
+[kaggle](https://www.kaggle.com/datasets)

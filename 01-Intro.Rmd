@@ -1,0 +1,18 @@
+<style>
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
+  .col3 {
+    columns: 3 100px;
+    -webkit-columns: 3 100px;
+    -moz-columns: 3 100px;
+  }
+</style>
+
+
+# Introduction
+As a statistician I frequently look for useful data. It might be for my research of for my teaching. Now and then I find a for me new source and I tend to forget the old one. The first part of this book is a collection of data sources.
+
+Next part is more ambitious. There are a number of papers I think that a statistician should have read for some reason. 

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chapter 2 Data sources | Statistics info</title>
+  <meta name="description" content="Some useful information for statisticians">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Chapter 2 Data sources | Statistics info" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Some useful information for statisticians" />
+  <meta name="github-repo" content="lyhagen/Statistics_info" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Data sources | Statistics info" />
+  
+  <meta name="twitter:description" content="Some useful information for statisticians" />
+  
+
+<meta name="author" content="Johan Lyhagen">
+
+
+<meta name="date" content="2019-04-10">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="introduction.html">
+<link rel="next" href="papers-to-read.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a><ul>
+<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#time-series-data-library"><i class="fa fa-check"></i><b>2.1</b> Time Series Data Library</a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#datamarket"><i class="fa fa-check"></i><b>2.2</b> DataMarket</a></li>
+<li class="chapter" data-level="2.3" data-path="data-sources.html"><a href="data-sources.html#quandl"><i class="fa fa-check"></i><b>2.3</b> Quandl</a></li>
+<li class="chapter" data-level="2.4" data-path="data-sources.html"><a href="data-sources.html#dataseries"><i class="fa fa-check"></i><b>2.4</b> Dataseries</a></li>
+<li class="chapter" data-level="2.5" data-path="data-sources.html"><a href="data-sources.html#pdfetch"><i class="fa fa-check"></i><b>2.5</b> pdfetch</a></li>
+<li class="chapter" data-level="2.6" data-path="data-sources.html"><a href="data-sources.html#ipums"><i class="fa fa-check"></i><b>2.6</b> IPUMS</a></li>
+<li class="chapter" data-level="2.7" data-path="data-sources.html"><a href="data-sources.html#ess"><i class="fa fa-check"></i><b>2.7</b> ESS</a></li>
+<li class="chapter" data-level="2.8" data-path="data-sources.html"><a href="data-sources.html#penn-world-table"><i class="fa fa-check"></i><b>2.8</b> Penn World Table</a></li>
+<li class="chapter" data-level="2.9" data-path="data-sources.html"><a href="data-sources.html#kaggle"><i class="fa fa-check"></i><b>2.9</b> kaggle</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="papers-to-read.html"><a href="papers-to-read.html"><i class="fa fa-check"></i><b>3</b> Papers to read</a><ul>
+<li class="chapter" data-level="3.1" data-path="papers-to-read.html"><a href="papers-to-read.html#papers-to-read-1"><i class="fa fa-check"></i><b>3.1</b> Papers to read</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistics info</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="data-sources" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Data sources</h1>
+<div id="time-series-data-library" class="section level2">
+<h2><span class="header-section-number">2.1</span> Time Series Data Library</h2>
+<p>Rob J. Hyndman maintained the Time Series Data Library for a long time. Now you can get the data from the R package tsdl. It used to be available fron <a href="https://datamarket.com/data/list/?q=provider:tsdl">DataMarket</a> but the site has been acquired by Qlik. The collection consists of about 560 time series of all various variables. Unfortunately, the tsdl package is not on CRAN but can be installed using the following R commands:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;devtools&quot;</span>)
+<span class="kw">library</span>(devtools)
+<span class="kw">install_github</span>(<span class="st">&quot;FinYang/tsdl&quot;</span>)</code></pre></div>
+</div>
+<div id="datamarket" class="section level2">
+<h2><span class="header-section-number">2.2</span> DataMarket</h2>
+<p>DataMarket was a very good source for data. Unfortunately it has been acquired by Qlik and the informaiton about how to access the data nowadays is lacking. They do have an <a href="https://www.qlik.com/us/academicprogram">acadmic program</a> but it is not clear what comes with it.</p>
+</div>
+<div id="quandl" class="section level2">
+<h2><span class="header-section-number">2.3</span> Quandl</h2>
+<p>The Quandl ata source has many economic and financial datasets. For some data you need to have a premoium account but for many you do not need to. You can find the series here: <a href="https://www.quandl.com/search">Quandl</a> where you can browse for the data you want. Once you found what you looking for, press Expand and then there is a R button on the right hand side and clicking on it yields the R code to download it.</p>
+<p>To install the Quandl package:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;Quandl&quot;</span>)
+<span class="kw">library</span>(Quandl)</code></pre></div>
+<p>For example, to download the Big Mac index for Sweden</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">Quandl</span>(<span class="st">&quot;ECONOMIST/BIGMAC_SWE&quot;</span>)</code></pre></div>
+<p>More information can be found at <a href="https://docs.quandl.com/docs/r">Quandl R Guide</a>.</p>
+</div>
+<div id="dataseries" class="section level2">
+<h2><span class="header-section-number">2.4</span> Dataseries</h2>
+<p><a href="http://www.dataseries.org/">dataseries.org</a> is a comprehensive data archive for Switzerland.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;dataseries&quot;</span>)
+<span class="kw">library</span>(dataseries)</code></pre></div>
+<p>For ecah series you get the R code. For example CPI</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dataseries<span class="op">::</span><span class="kw">ds</span>(<span class="st">&quot;CPI.LD2010100&quot;</span>)</code></pre></div>
+</div>
+<div id="pdfetch" class="section level2">
+<h2><span class="header-section-number">2.5</span> pdfetch</h2>
+<p>Abiel Reinhart has made an R package to make it easier to download public economic and financial data. The sources are: St Louis Fed’s FRED system, Yahoo Finance, the US Bureau of Labor Statistics, the US Energy Information Administration, the World Bank, Eurostat,the European Central Bank, the Bank of England, the UK’s Ofﬁce of National Statistics, Deutsche Bundesbank, and INSEE.</p>
+<p>It is availalbe at CRAN and can be installed using:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;pdfetch&quot;</span>)
+<span class="kw">library</span>(pdfetch)</code></pre></div>
+<p>Depending on the source differnt functions needs to be used and the identifiers need to be found att the various sources.</p>
+</div>
+<div id="ipums" class="section level2">
+<h2><span class="header-section-number">2.6</span> IPUMS</h2>
+<p>IPUMs provides data from censuses and surveys from around the world. There are huge amounst of data, e.g. IPUMS International has data for almost 100 countries. To use IPUMS you need to register but the data is free of charge. It can be found here: <a href="https://www.ipums.org/">IPUMS</a>. There is, to my knowledge, no nice R interface.</p>
+</div>
+<div id="ess" class="section level2">
+<h2><span class="header-section-number">2.7</span> ESS</h2>
+<p>European Social Surveys is a biennial cross-country survey of attitudes and behaviour. The first round was in 2001 and it is now at round 8. Hence, it is possible to both analyze changes over time as well as differences between countries. The access is free of charge but a registration is nessisary.</p>
+</div>
+<div id="penn-world-table" class="section level2">
+<h2><span class="header-section-number">2.8</span> Penn World Table</h2>
+<p>The Penn World Table consists of data on relative income and other econmic indicators (almost 30) for more than 180 countries between 1950 and 2014. It is developed by Robert Summers and Alan Heston (amongst others) for the purpose of comparing national accounts. It is administrated by Groningen Growth and Development Centre, Faculty of Economics and Business, University of Groningen. There is a R package pwt9 (available at CRAN) which facilitates access to the data.</p>
+</div>
+<div id="kaggle" class="section level2">
+<h2><span class="header-section-number">2.9</span> kaggle</h2>
+<p>kaggle is one of the largest collections of datasets with more than 15,000 datasets.It consists of all varoius types of data and you do not need to register to access them. <a href="https://www.kaggle.com/datasets">kaggle</a></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="papers-to-read.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
