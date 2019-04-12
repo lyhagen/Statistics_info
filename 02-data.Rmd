@@ -76,3 +76,14 @@ The Penn World Table consists of data on relative income and other econmic indic
 ## kaggle
 kaggle is one of the largest collections of datasets with more than 15,000 datasets.It consists of all varoius types of data and you do not need to register to access them. 
 [kaggle](https://www.kaggle.com/datasets)
+
+## Forecasting competitions
+The Makridakis competitions or the M-competetitions are a series of forecasting competitions with the aim of evaluating forecasting methods. The first one was in 1982 while the fourth 2018. The number of series have varied as well as the seasonal frequency. The first consisted of 1001 series and the fourth 100,000, while the second only 29. The third had 3003 series. 
+The data from the first nd third competitions may be found in the R package Mcomp. 
+
+The organisors of the third M-competition tried to get researcher in artificial neural networks to participate but due to the many series and the computational burdon of ANN only one did and performed poorly. This inspuired the NN3-competition which was based on 111 of the M3-competition data (same source but shifted in time). These data can be found at kaggle.
+
+Yet another forcasting competition was the 2010 Tourist competition. As they couldn't get permission for all data explanatory variables are not included in the public data. The data can be found at kaggle or through the R-package Tcomp.
+
+## Hyndman data
+Rob J Hyndman is a prominent profesor at Monash University doing research in forcasting. He has authored many books and data can be found at the following R-packages: fma, expsmooth, fpp, fpp2. 
