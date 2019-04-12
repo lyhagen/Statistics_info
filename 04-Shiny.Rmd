@@ -1,6 +1,6 @@
-# Papers to read
+# Shiny apps
 
 I
 
-## Papers to read
+## First Shiny app
  
