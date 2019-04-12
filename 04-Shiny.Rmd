@@ -1,6 +1,6 @@
 # Shiny apps
 
-I
+Here I will show examples of Shiny apps I done!
 
 ## First Shiny app
  
