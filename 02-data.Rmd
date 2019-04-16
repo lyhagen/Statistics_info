@@ -87,3 +87,60 @@ Yet another forcasting competition was the 2010 Tourist competition. As they cou
 
 ## Hyndman data
 Rob J Hyndman is a prominent profesor at Monash University doing research in forcasting. He has authored many books and data can be found at the following R-packages: fma, expsmooth, fpp, fpp2. 
+
+## UC Irvine Machine Learning Repository
+
+A nice collection of 468 data sets can be found at [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php). The data sets are not recent but there is a large variaty. There are data sets on omages, census data, el Nino etc, suitably for data mining exercises.
+
+## yelp
+
+A source of a very specific data set is the [yelp data](https://www.yelp.com/dataset). It contains of almost 9 gigabytes of uncompressed data (3.6 comrpessed) on reviews etc on various services, like restaurants etc. The photos can also be downloaded. The data is free for academic purposes. The data can be access using JSON which is a lightweight data-interchange format. R can read JSON files using the packages rjson, RJSONIO and jsonlite. 
+
+## Official US data
+
+US has made availible a huge number of data sets, about 240,000, through [data.gov](https://www.data.gov). The data are on differnt levels such as cities, state and federal on various topics. it can be everything from estimated  average prices for over 150 commonly consumed fresh and processed fruits and vegetables to crime rates for Chicago to the present. The Chicago crime rates data consists of all crimes in the Chicago area including information on type of crime, case id, location  etc on each crime committed. The data can be downloaded in csv, rdf, json or xml formats.
+
+Also [US Census Bureau ](https://www.census.gov/data.html) is a good source of data. 
+
+## 538
+
+The site [FiveThirtyEight](https://data.fivethirtyeight.com/) is a site focusing on opinion polls, politics, economics and sports. It originated as a polling aggregation website created by Nate Silver. Compared to many other sites 538 share data and code behind some of their articles and graphics. They have data which is not common such as NBA predictions, "How popular is Trump" and Senate forecasts.
+
+## Football data
+
+A main source of football data is [football-data.co.uk](http://www.football-data.co.uk/data.php) where you can find historical data on all main leagues in the world and some minor leagues. E.g. for England you can getmatch results for the four highest leagues from season 93/94. The newer data includes much more data such as shots, shots on target, woodwork hits, fouls committed besides half and full time results. The data is in csv format and needs to be downloaded league by league, season by season. Some of the data can be accessed using the GitHub page [sports-data](https://datahub.io/sports-data) but it seems to be restricted to about the last 10 seasons.
+
+The site [football-data.org](https://www.football-data.org/) offers access using e.g. R code but requires registration for 12 leagues. Monthly fee yileds access to up to 144 competitions. There is no information on the site on when the historical data starts.
+
+A very nice R package is [engsoccerdata](https://github.com/jalapic/engsoccerdata) with e.g. data on the four highest leagues in England from 1888- 2017. The package is not on CRAN and the following code may be used:
+
+```{r eval=FALSE} 
+library(devtools)
+install_github('jalapic/engsoccerdata', username = "jalapic")
+library(engsoccerdata)
+
+data(package="engsoccerdata")    # lists datasets currently available
+```
+
+
+## Machine learning data set respository
+
+More than 800 data sets can be found at [mldata.org](http://mldata.org/repository/data/). There are a variety of topics, e.g. Plant classification, Book Evaluation, andLinux kernel statistics.  The formats are not coherent amongst the data sets but common are XML, csv and mat. A related site is [mloss.org](https://mloss.org/software/) with machine learning code.
+
+## Open ML
+
+[Open ML](https://www.openml.org/search?type=data&q=tags.tag:OpenML100) has about 90 data set suitable for machine learning. There are data sets on images (e.g. handwritten numerals, the Breast Cancer Wisconsin (Original) Data Set), speach recongnition (e.g. letters, nasal vs oral sound), and other interesting data sets such as the widely used Australian New South Wales Electricity Market data set. There is an OpenML R package dowloadable from CRAN. Instructions can be found [here](https://openml.github.io/OpenML/R-guide/) including a public read-only API key.
+
+## Academic Torrent
+
+The other sites host the data while the [Academic Torrents](http://academictorrents.com/browse.php?cat=6) use the BitTorrent protocol for peer to peer file sharing. This is a method more famously used to share movies. Here, the use of the method is legal and implies high speed downloading of the data sets. Ther are more than 42 Terabytes of all kind of data. There is an old R package [atdownload](https://github.com/liuyifei0226/atproject) as well as old [java tool](https://josephpcohen.com/w/academic-torrent-download-tool-atdown/) but it is inclear if they are still working.
+
+## Swedish National Data Service
+
+[SND](https://snd.gu.se/en/catalogue/search) is a public data base fort Swedish research data. Some data is hosted at the SND site while other is accessed from external actors. Also the level of access differs, some data you can just download, sometiomes you ned toregister first to be able to donwload. For some data sets you need to ask for permission from the data owner. 
+
+## EU Data
+
+The [EU Open Data Portal](http://data.europa.eu/euodp/en/data/) has as purpose "EU institutions are invited to make their data publicly available whenever possible". The data can be used free of charge and without copyright restrictions as long as you acknowledge the source. There is no R package but curl can be used to access the [API](http://data.europa.eu/euodp/en/developerscorner). The data origins from EU authorities, hence they are related to them. Examples include Gender Equlity Index, Pupils and students enrolled by education level, sex and age, and Nights spent at tourist accommodation establishments.
+
+Compared to the EU Open Data Portal, the [European Data Portal](https://www.europeandataportal.eu/data/#/datasets) consists of data from the indvidual EU member countries. 
